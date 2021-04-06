@@ -24,7 +24,9 @@ Zookeeper plays a vital role when you have a multiple brokers.
 ./zookeeper-server-start.sh ../config/zookeeper.properties
 ```
 
-- Add the below properties in the server.properties
+
+
+- Start the kafka broker. Add the below properties in the server.properties
 
 ```
 listeners=PLAINTEXT://localhost:9092
@@ -93,11 +95,25 @@ auto.create.topics.enable=false
 zookeeper-server-start.bat ..\..\config\zookeeper.properties
 ```
 
--   Start up the Kafka Broker.
+- Add the below properties in the server.properties. Don't auto create topics. (search for listeners)
+
+```
+listeners=PLAINTEXT://localhost:9092
+auto.create.topics.enable=false
+```
+
+--> you can it see it is running on port 2181 (INFO binding to port 0.0.0.0/0.0.0.0:2181). Now zookeeper instance is ready.
+
+-   Start up the Kafka server Broker.
 
 ```
 kafka-server-start.bat ..\..\config\server.properties
 ```
+
+-->  you can kafka server is running INFO [KafkaServer id=0] started (kafka.server.KafkaServer)
+
+- --> now broker register itself with zookeeper.
+
 
 ## How to create a topic ?
 
