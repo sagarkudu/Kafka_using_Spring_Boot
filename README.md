@@ -39,7 +39,8 @@ auto.create.topics.enable=false
 ./kafka-server-start.sh ../config/server.properties
 ```
 
-## How to create a topic ?
+## How to create a topic ? 
+- open new cmd > come in /bin directory. (make sure above 2 instances are running)
 
 ```
 ./kafka-topics.sh --create --topic test-topic -zookeeper localhost:2181 --replication-factor 1 --partitions 4
@@ -118,7 +119,7 @@ kafka-server-start.bat ..\..\config\server.properties
 ## How to create a topic ?
 
 ```
-kafka-topics.bat --create --topic test-topic -zookeeper localhost:2181 --replication-factor 1 --partitions 4
+kafka-topics.sh --create --topic test-topic -zookeeper localhost:2181 --replication-factor 1 --partitions 4
 ```
 
 ## How to instantiate a Console Producer?
