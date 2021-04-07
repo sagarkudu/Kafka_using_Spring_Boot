@@ -42,7 +42,7 @@ dataDir=c:/kafka/zookeeper-data
 ->  Open new cmd > go to kafka folder, then start zookeeper server and pass config file to it.
 
 ```
-c:\kafka > .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 ```
 -> you can see zookeeper has been started on port #2181
 
@@ -51,7 +51,7 @@ c:\kafka > .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.propertie
 ->  Open new cmd > go to kafka folder, then start kafka broker and pass config file to it.
 
 ```
-c:\kafka > .\bin\windows\kafka-server-start.bat .\config\server.properties
+.\bin\windows\kafka-server-start.bat .\config\server.properties
 ```
 -> you can see kafka server is running with brokerId=0
 
@@ -60,7 +60,7 @@ c:\kafka > .\bin\windows\kafka-server-start.bat .\config\server.properties
 -> we are going to create a topic "**TestTopic**"
 
 ```
-c:\kafka > .\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic TestTopic
+.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic TestTopic
 ```
 -> you can see Topic is created with name "**TestTopic**"
 
