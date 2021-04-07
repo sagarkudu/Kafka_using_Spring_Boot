@@ -100,7 +100,7 @@ c:\kafka > .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost
 	How are you?
 	I am good. Thanks**
 	
---> Now we have sent message till now, now kafka consumer is waiting to consume this messages.
+--> Now we have received message till now, which is sent by Kafka Producer and it will continuously wait in queue for the new message from producer.
 
 Note: The **--from-beginning** is important, if not used order will not be maintained and messages will go into another partitions.
 
