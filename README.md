@@ -16,7 +16,7 @@ Zookeeper plays a vital role when you have a multiple brokers.
 
 <p>
 
-- Make sure you are navigated inside the **kafka** root directory.
+- Make sure you are navigated inside the **kafka/config** root directory.
 
 ## Edit server.properties file
 
@@ -30,6 +30,11 @@ log.dirs=c:/kafka/kafka-logs
 ```
 dataDir=c:/kafka/zookeeper-data
 ```
+
+<p>
+
+- Make sure you are navigated inside the **kafka** root directory.
+
 
 ## Start Zookeeper and Kafka Broker
 
