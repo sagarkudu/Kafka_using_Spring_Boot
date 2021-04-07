@@ -80,9 +80,10 @@ c:\kafka > .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092
 ```
 
 --> Type your message in single line 
-e.g > Hi Sagar
-	> How are you?
-	> I am good. Thanks
+e.g 
+- Hi Sagar
+- How are you?
+- I am good. Thanks
 	
 --> Now we have sent message till now, now kafka consumer is waiting to consume this messages.
 
