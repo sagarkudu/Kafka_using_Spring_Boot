@@ -13,7 +13,7 @@ Zookeeper plays a vital role when you have a multiple brokers.
 
 <p>
 
-- Make sure you are navigated inside the bin directory.
+- Make sure you are navigated inside the **kafka** root directory.
 
 ## Start Zookeeper and Kafka Broker
 
