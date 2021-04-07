@@ -39,7 +39,7 @@ dataDir=c:/kafka/zookeeper-data
 ## Start Zookeeper and Kafka Broker
 
 -   Start up the Zookeeper. (always start zookeeper first)
-->   go to kafka folder, then start zookeeper server and pass config file to it.
+->  Open new cmd > go to kafka folder, then start zookeeper server and pass config file to it.
 
 ```
 c:\kafka > .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
@@ -48,6 +48,7 @@ c:\kafka > .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.propertie
 
 
 -   Start up the Kafka Broker
+->  Open new cmd > go to kafka folder, then start kafka broker and pass config file to it.
 
 ```
 c:\kafka > .\bin\windows\kafka-server-start.bat .\config\server.properties
