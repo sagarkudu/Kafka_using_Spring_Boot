@@ -9,15 +9,31 @@ After that zookeeper manages and monitor the health of kafka broker.
 
 Zookeeper plays a vital role when you have a multiple brokers.
 
+
+
 # Setting Up Kafka
+
 
 <p>
 
 - Make sure you are navigated inside the **kafka** root directory.
 
+## Edit server.properties file
+
+```
+
+log.dirs=c:/kafka/kafka-logs
+```
+
+## Edit zookeeper.properties file
+
+```
+dataDir=c:/kafka/zookeeper-data
+```
+
 ## Start Zookeeper and Kafka Broker
 
--   Start up the Zookeeper.
+-   Start up the Zookeeper. (always start zookeeper first)
 ->   go to kafka folder, then start zookeeper server and pass config file to it.
 
 ```
