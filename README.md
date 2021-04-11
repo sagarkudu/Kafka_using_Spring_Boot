@@ -57,19 +57,19 @@ dataDir=c:/kafka/zookeeper-data
 
 ## How to create a topic ? 
 - open new cmd > come in /kafka directory. (make sure above 2 instances are running).
--> we are going to create a topic "**TestTopic**"
+-> we are going to create a topic "**test-topic**"
 
 ```
-.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 4 --topic TestTopic
+.\bin\windows\kafka-topics.bat --create --topic test-topic -zookeeper localhost:2181 --replication-factor 1 --partitions 4
 ```
--> you can see Topic is created with name "**TestTopic**"
+-> you can see Topic is created with name **test-topic**"
 
 ## Checking list of Topics available in kafka server.
 
 ```
 .\bin\windows\kafka-topics.bat --list --zookeeper localhost:2181 
 ```
--> you can see Topic is listed with name "**TestTopic**"
+-> you can see Topic is listed with name **test-topic**"
 
 ## Sending and Receiving messages
 
