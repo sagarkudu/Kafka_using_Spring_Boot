@@ -60,14 +60,14 @@ dataDir=c:/kafka/zookeeper-data
 -> we are going to create a topic "**TestTopic**"
 
 ```
-.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic TestTopic
+.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 4 --topic TestTopic
 ```
 -> you can see Topic is created with name "**TestTopic**"
 
 ## Checking list of Topics available in kafka server.
 
 ```
-c:\kafka > .\bin\windows\kafka-topics.bat --list --zookeeper localhost:2181 
+.\bin\windows\kafka-topics.bat --list --zookeeper localhost:2181 
 ```
 -> you can see Topic is listed with name "**TestTopic**"
 
@@ -76,7 +76,7 @@ c:\kafka > .\bin\windows\kafka-topics.bat --list --zookeeper localhost:2181
 ### lets start our kafka producer
 
 ```
-c:\kafka > .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic TestTopic
+.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic TestTopic
 ```
 
 --> Type your message in single line 
@@ -92,7 +92,7 @@ e.g
 --> open new cmd to recieve messages
 
 ```
-c:\kafka > .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic TestTopic --from-beginning
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic TestTopic --from-beginning
 ```
 
 --> List of message received which is sent by Producer. 
