@@ -76,7 +76,7 @@ dataDir=c:/kafka/zookeeper-data
 ### lets start our kafka producer
 
 ```
-.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic TestTopic
+.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic test-topic
 ```
 
 --> Type your message in single line 
@@ -92,7 +92,7 @@ e.g
 --> open new cmd to recieve messages
 
 ```
-.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic TestTopic --from-beginning
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test-topic --from-beginning
 ```
 
 --> List of message received which is sent by Producer. 
